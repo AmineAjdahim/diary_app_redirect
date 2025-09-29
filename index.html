@@ -5,7 +5,7 @@
   <title>Redirecting...</title>
   <script>
     // Grab everything after ? (code, state, etc.)
-    const query = window.location.search;
+     const query = window.location.search + window.location.hash;
 
     // Redirect to your app’s custom scheme
     window.location.href = "diaryapp://" + query;
